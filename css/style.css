@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header Menu*/
+.header-menu {
+    background-color: #3498db;
+}
+
+.header-menu ul {
+    text-align: center;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.header-menu ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-menu ul li:hover > a {
+    background: red;
+}
+
+/*DropDown Start*/
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: pink;
+    transition: .4s;
+}
+
+.header-menu ul li ul li{
+    display: block;
+}
+
+.header-menu ul li ul li a{
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+/*Hover*/
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    
+    transform: scaleY(1);
+}
+
+/* List Items */
+.list-items{
+	margin-top: 30px;
+    margin-left: 80px;
+}
+
+.list-items ul{
+    list-style-image:url(../img/right-arrow.png);
+}
+
+/* Social Menu */
+.social-menu{
+    margin-top: 50px;
+}
+
+.social-menu ul{
+    text-align: center;
+}
+
+.social-menu ul li{
+    display: inline-block;
+}
+
+.social-menu ul li a{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #a29bfe;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.social-menu ul li a:hover{
+    background-color: #fd79a8;
+    transition: .5s;
+}
